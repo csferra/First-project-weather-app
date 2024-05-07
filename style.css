@@ -5,6 +5,7 @@
   display: block;
   margin: 0 auto;
   box-shadow: 0 30px 50px #fddbfd;
+  padding: 0 20px 20px 20px;
 }
 
 form {
@@ -107,10 +108,4 @@ a {
   bottom: 18px;
   right: 22px;
   font-size: 22px;
-}
-
-.temperature-details {
-  display: flex;
-  justify-content: left;
-  font-family: monospace;
 }
