@@ -102,6 +102,13 @@ a {
   right: -500px;
 }
 
+#degrees {
+  position: relative;
+  bottom: 18px;
+  right: 22px;
+  font-size: 22px;
+}
+
 .temperature-details {
   display: flex;
   justify-content: left;
