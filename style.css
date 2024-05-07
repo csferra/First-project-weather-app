@@ -4,7 +4,7 @@
   max-width: 800px;
   display: block;
   margin: 0 auto;
-  box-shadow: #ffd1ff;
+  box-shadow: 0 30px 50px #fddbfd;
 }
 
 form {
@@ -13,7 +13,7 @@ form {
   padding-top: 50px;
   padding-bottom: 0;
   padding-top: 50px;
-  padding-left: 210px;
+  padding-left: 50px;
   border-radius: 10px;
   font-size: 30px;
   top: 10px;
@@ -67,23 +67,21 @@ a {
 .search-input {
   font-size: 28px;
   font-family: monospace;
-  max-width: 1600px;
+  width: 500px;
   border: none;
   border-radius: 10px;
-  padding-top: 7px;
-  position: relative;
-  top: 10px;
+  padding: 16px;
 }
 
 .search-button {
   background-color: rgb(241, 70, 213);
   font-size: 18px;
   border-radius: 10px;
-  padding: 10px;
+  padding: 22px;
   color: white;
   border: none;
   position: relative;
-  top: 3px;
+  top: -3px;
 }
 
 .humidity {
