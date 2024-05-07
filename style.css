@@ -1,0 +1,109 @@
+.container {
+  background: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+  border-radius: 15px;
+  max-width: 800px;
+  display: block;
+  margin: 0 auto;
+}
+
+form {
+  display: block;
+  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 0;
+  padding-top: 50px;
+  padding-left: 210px;
+  border-radius: 10px;
+  font-size: 30px;
+  top: 10px;
+  left: -247px;
+}
+h1 {
+  display: flex;
+  justify-content: start;
+  padding-left: 50px;
+  padding-bottom: 20px;
+  padding-top: 40px;
+
+  margin: 0;
+  font-family: monospace;
+  font-size: 45px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-family: monospace;
+  font-size: 18px;
+  margin-top: -20px;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  padding-left: 55px;
+  line-height: 1;
+  font-family: monospace;
+  font-size: 20px;
+}
+
+footer {
+  padding-bottom: 30px;
+  text-align: center;
+  padding-top: 20px;
+  font-family: monospace;
+  font-size: 15px;
+}
+
+a {
+  color: blue;
+}
+
+.search-input {
+  font-size: 28px;
+  font-family: monospace;
+  max-width: 1600px;
+  border: none;
+  border-radius: 10px;
+  padding-top: 7px;
+  position: relative;
+  top: 10px;
+}
+
+.search-button {
+  background-color: rgb(241, 70, 213);
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  border: none;
+  position: relative;
+  top: 3px;
+}
+
+.humidity {
+  color: rgb(206, 37, 164);
+  font-weight: bold;
+}
+
+.wind {
+  color: rgb(206, 37, 164);
+  font-weight: bold;
+}
+.current-temperature {
+  position: relative;
+  padding-right: 80px;
+  top: -110px;
+  font-family: monospace;
+  font-size: 50px;
+  right: -500px;
+}
+
+.temperature-details {
+  display: flex;
+  justify-content: left;
+  font-family: monospace;
+}
