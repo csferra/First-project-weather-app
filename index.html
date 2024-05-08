@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <title>My Weather App</title>
 </head>
 
@@ -27,7 +27,8 @@
                 Wind:<span class="humidity">5 mph</span>
             </p>
             <br />
-            <div class="current-temperature">☀️ 16 <span id="degrees">&degC</span></div>
+            <div class="current-temperature">☀️ <span id="current-temperature">16</span> <span id="degrees">&degC</span>
+            </div>
             <div>
                 <ul>
                     <li>
