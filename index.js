@@ -7,6 +7,7 @@ function refreshWeather(response) {
   let windSpeedElement = document.querySelector("#wind-speed");
   let currentTimeElement = document.querySelector("#current-time");
   let date = new Date(response.data.time * 1000);
+  let icon = document.querySelector("#icon");
 
   cityElement.innerHTML = response.data.city;
   currentTimeElement.innerHTML = formatDate(date);
@@ -14,6 +15,7 @@ function refreshWeather(response) {
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
   temperatureElement.innerHTML = Math.round(temperature);
+  icon.innerHTML = `<img src="${response.data.condition.icon_url}" class="current-temperature-icon" /> `;
 }
 
 function formatDate(date) {
@@ -58,4 +60,4 @@ function handleSearchSubmit(event) {
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
-//searchCity("Santarem");
+searchCity("Santarem");

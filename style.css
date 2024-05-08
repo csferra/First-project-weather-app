@@ -25,9 +25,7 @@ h1 {
   display: flex;
   justify-content: start;
   padding-left: 50px;
-  padding-bottom: 20px;
-  padding-top: 40px;
-
+  padding-top: 60px;
   margin: 0;
   font-family: monospace;
   font-size: 45px;
@@ -54,7 +52,7 @@ p {
 }
 
 footer {
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   text-align: center;
   padding-top: 20px;
   font-family: monospace;
@@ -96,18 +94,26 @@ a {
   color: rgb(206, 37, 164);
   font-weight: bold;
 }
-.current-temperature {
+#current-temperature {
   position: relative;
-  padding-right: 80px;
-  top: -110px;
+  padding-right: 40px;
+  top: -200px;
   font-family: monospace;
-  font-size: 50px;
-  right: -590px;
+  font-size: 70px;
+  right: -640px;
+}
+
+.current-temperature-icon {
+  position: relative;
+  left: 530px;
+  top: -100px;
 }
 
 #degrees {
   position: relative;
-  bottom: 18px;
-  right: 22px;
+  top: -230px;
+  right: 70px;
+  left: 600px;
   font-size: 22px;
+  font-family: monospace;
 }
