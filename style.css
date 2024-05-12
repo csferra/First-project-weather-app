@@ -1,62 +1,29 @@
+body {
+  background-image: url("https://media.istockphoto.com/id/888845986/photo/colorful-clouds-on-dramatic-sunset-sky.jpg?s=612x612&w=0&k=20&c=-TQcqD-dRdCwCy7h2zR4LyOYRGrBsjcCtWF2uYtMY0o=");
+  background-repeat: none;
+  background-size: cover;
+}
+
 .container {
   background: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
   border-radius: 15px;
-  max-width: 800px;
-  display: block;
-  margin: 0 auto;
+  max-width: 600px;
+  margin: 45px auto;
   box-shadow: 0 30px 50px #fddbfd;
-  padding: 0 20px 20px 20px;
+  padding: 30px;
+  opacity: 80%;
 }
 
-form {
-  display: block;
-  margin-top: 50px;
-  padding-top: 50px;
-  padding-bottom: 0;
-  padding-top: 50px;
-  padding-left: 50px;
-  border-radius: 10px;
-  font-size: 30px;
-  top: 10px;
-  left: -247px;
-}
-
-h1 {
-  display: flex;
-  justify-content: start;
-  padding-left: 50px;
-  padding-top: 60px;
-  margin: 0;
-  font-family: monospace;
-  font-size: 45px;
-}
-
-ul {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  font-family: monospace;
-  font-size: 18px;
-  margin-top: -20px;
-}
-
-li {
-  list-style: none;
-}
-
-p {
-  padding-left: 55px;
-  line-height: 1;
-  font-family: monospace;
-  font-size: 20px;
+main {
+  padding: 30px 0;
 }
 
 footer {
   padding-bottom: 30px;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 30px 0 0 0;
   font-family: monospace;
-  font-size: 15px;
+  font-size: 13px;
   border-top: 1px solid #fddbfd;
   color: rgba(0, 0, 0, 0.6);
 }
@@ -66,23 +33,44 @@ a {
 }
 
 .search-input {
-  font-size: 28px;
+  background-color: beige;
+  font-size: 18px;
   font-family: monospace;
-  width: 500px;
+  width: 70%;
   border: none;
   border-radius: 10px;
-  padding: 16px;
+  padding: 15px 20px;
 }
 
 .search-button {
   background-color: rgb(241, 70, 213);
   font-size: 20px;
   border-radius: 10px;
-  padding: 20px 60px;
+  padding: 15px 30px;
+  margin-left: 5px;
   color: white;
   border: none;
-  position: relative;
-  top: -3px;
+  font-size: 16px;
+  font-family: monospace;
+}
+
+.weather-app-data {
+  display: flex;
+  justify-content: space-between;
+}
+
+.current-city {
+  margin: 0;
+  font-size: 38px;
+  line-height: 48px;
+  font-family: monospace;
+}
+
+.details {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  font-family: monospace;
 }
 
 .humidity {
@@ -94,33 +82,31 @@ a {
   color: rgb(206, 37, 164);
   font-weight: bold;
 }
-#current-temperature {
-  position: relative;
-  padding-right: 40px;
-  top: -200px;
-  font-family: monospace;
-  font-size: 70px;
-  right: -640px;
+
+.current-temperature-container {
+  display: flex;
 }
 
 .current-temperature-icon {
-  position: relative;
-  left: 530px;
-  top: -100px;
+  font-size: 44px;
+  margin-top: 4px;
 }
-
-#degrees {
-  position: relative;
-  top: -230px;
-  right: 70px;
-  left: 600px;
-  font-size: 22px;
+.current-temperature {
+  font-size: 88px;
+  font-weight: bold;
+  margin-left: 10px;
   font-family: monospace;
 }
-
-.weather-forecast {
+.weather-units {
   margin-top: 20px;
+  font-size: 28px;
+  font-family: monospace;
+}
+.weather-forecast {
   text-align: center;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
 }
 
 .weather-forecast-date {
@@ -131,6 +117,8 @@ a {
 
 .weather-forecast-temperatures {
   font-size: 13px;
+  display: block;
+  justify-content: space-between;
 }
 
 .weather-forecast-temperature-min {

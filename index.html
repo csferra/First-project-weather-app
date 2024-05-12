@@ -12,28 +12,30 @@
 <body>
     <div class="container">
         <header>
-            <form id="search-form">
+            <form class="search-form" id="search-form">
                 <input type="text" placeholder="Enter a city..." required class="search-input" id="search-input" />
                 <input type="submit" value="Search" class="search-button" id="submit-button" />
             </form>
         </header>
         <main>
-            <h1 id="current-city"></h1>
+            <div class="weather-app-data">
+                <div>
+                    <h1 class="current-city" id="current-city"></h1>
 
-            <p>
-                <span id="current-time"></span>, <span id="description"></span>
-            </p>
-            <p>Humidity:<span class="humidity" id="humidity"></span>
-                Wind:<span class="humidity" id="wind-speed"></span>
-            </p>
-            <div id="icon"></div>
-            <span id="current-temperature"></span> <span id="degrees">&degC</span>
-
-            <div class="weather-forecast" id="forecast"></div>
+                    <p class="details">
+                        <span id="current-time"></span>, <span id="description"></span>
+                        </br>
+                        Humidity:<span class="humidity" id="humidity"></span>
+                        Wind:<span class="humidity" id="wind-speed"></span>
+                    </p>
+                </div>
+                <div class="current-temperature-container">
+                    <div class="current-temperature-icon" id="icon"></div>
+                    <div class="current-temperature" id="current-temperature"></div>
+                    <div class="weather-units">&degC</div>
+                </div>
+                <div class="weather-forecast" id="forecast"></div>
         </main>
-
-
-
         <script src="index.js"></script>
 </body>
 
