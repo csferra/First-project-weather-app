@@ -66,26 +66,6 @@ function formatDay(timestamp) {
   return days[date.getDay()];
 }
 
-//function displayFahrenheitTemperature(event) {
-//event.preventDefault();
-//let temperatureElement = document.querySelector("#temperature");
-
-//celsiusLink.classList.remove("active");
-//fahrenheitLink.classList.add("active");
-// let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
-//temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
-//}
-
-//function displayCelsiusTemperature(event) {
-//event.preventDefault();
-//celsiusLink.classList.add("active");
-//fahrenheitLink.classList.remove("active");
-//let temperatureElement = document.querySelector("#temperature");
-//temperatureElement.innerHTML = Math.round(celsiusTemperature);
-//}
-
-//let celsiusTemperature = null;
-
 function getForecast(city) {
   let apiKey = "24b318bfc608a94473fe2oc5at4fa2cb";
   let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
@@ -106,26 +86,19 @@ function displayForecast(response) {
         <img src="${day.condition.icon_url}"/>
         </div>
         <div class="weather-forecast-temperatures">
-        <div class="weather-forecast temperature"><strong>${Math.round(
+        <div class="weather-forecast-temperature" id="weather-temp-max"><strong>${Math.round(
           day.temperature.maximum
         )}&deg</strong></div>
         <div class="weather-forecast-temperature">${Math.round(
           day.temperature.minimum
         )}&deg</div>
-        </div>
-        </div>`;
+        </div></div>`;
     }
   });
 
   let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = forecastHtml;
 }
-
-//let fahrenheitLink = document.querySelector("#fahrenheit-link");
-//fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
-
-//let celsiusLink = document.querySelector("#celsius-link");
-//celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);

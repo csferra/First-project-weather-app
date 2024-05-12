@@ -19,17 +19,20 @@ main {
 }
 
 footer {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   text-align: center;
-  padding-top: 30px 0 0 0;
+  padding-top: 30px;
   font-family: monospace;
-  font-size: 13px;
+  font-size: 12px;
   border-top: 1px solid #fddbfd;
   color: rgba(0, 0, 0, 0.6);
 }
 
 a {
   color: rgb(241, 70, 213);
+}
+a:hover {
+  color: blue;
 }
 
 .search-input {
@@ -54,9 +57,17 @@ a {
   font-family: monospace;
 }
 
+.search-button:hover {
+  background-color: rgb(241, 70, 213, 0.5);
+  color: black;
+}
+
 .weather-app-data {
   display: flex;
   justify-content: space-between;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .current-city {
@@ -68,7 +79,7 @@ a {
 
 .details {
   font-size: 16px;
-  line-height: 20px;
+  line-height: 30px;
   font-weight: 500;
   font-family: monospace;
 }
@@ -106,21 +117,48 @@ a {
   text-align: center;
   display: flex;
   justify-content: space-around;
+  /*margin-bottom: 30px;
+  margin-top: 25px;*/
+  font-family: monospace;
+  flex-wrap: wrap;
   margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .weather-forecast-date {
-  font-size: 16px;
+  font-size: 18px;
   color: black;
-  opacity: 0.5;
+  opacity: 0.9;
+}
+
+.weather-forecast-day {
+  font-weight: bold;
+  flex-basis: 20%;
+  margin-bottom: 20px;
 }
 
 .weather-forecast-temperatures {
-  font-size: 13px;
-  display: block;
+  /*font-size: 16px;*/
+  display: flex;
   justify-content: space-between;
+  font-family: monospace;
+  flex-wrap: wrap;
 }
 
+.weather-forecast-temperature {
+  /*flex-basis: 45%;
+  text-align: center;*/
+  justify-content: space-between;
+  flex-basis: 45%; /* Set the width of each temperature */
+  text-align: center;
+  margin-bottom: 10px; /* Add some space between temperatures */
+}
+
+#weather-temp-max {
+  font-weight: bold;
+  color: rgb(241, 70, 213);
+}
 .weather-forecast-temperature-min {
   opacity: 0.5;
+  padding-right: 20px;
 }
